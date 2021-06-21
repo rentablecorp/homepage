@@ -1,0 +1,104 @@
+.deposits {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .slider {
+    @include media-breakpoint-down(sm) {
+      padding-left: $px-sm;
+      padding-right: $px-sm;
+    }
+
+    .slick-track {
+      align-items: stretch;
+      display: flex;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 22px;
+    }
+  }
+
+  .slick-slide {
+    @include media-breakpoint-down(sm) {
+      max-width: 232px;
+      margin-right: 16px;
+      height: auto;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 360px;
+    padding: 80px 56px 60px;
+    width: 100%;
+
+    &.bg-gray {
+      background-color: rgba($gray-lighter, 0.4);
+    }
+
+    &:hover {
+      .deposits__arrow {
+        right: 20px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 24px 24px 60px;
+      height: 100%;
+      min-height: 232px;
+      max-width: 232px;
+      background-color: rgba($gray-lighter, 0.4);
+
+      &:hover {
+        .deposits__arrow {
+          right: 156px;
+        }
+      }
+    }
+
+    h4 {
+      margin-top: 20px;
+      max-width: 215px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 22px;
+      }
+    }
+  }
+
+  &__icon {
+    height: 56px;
+  }
+  
+  &__arrow {
+    position: absolute;
+    right: 40px;
+    bottom: 24px;
+    height: 32px;
+    transition: all .3s ease;
+
+    @include media-breakpoint-down(sm) {
+      right: 176px;
+    }
+  }
+}

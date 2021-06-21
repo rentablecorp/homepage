@@ -1,0 +1,156 @@
+.advantages {
+  position: relative;
+  overflow: hidden;
+
+  .row:nth-child(2n + 1) {
+    .content {
+
+      @include media-breakpoint-up(lg) {
+        padding-left: $px-lg;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding-left: 136px;
+      }
+    }
+  }
+
+  .bg_figure {
+    position: absolute;
+  }
+
+  .advantages__img {
+    position: absolute;
+    left: 50%;
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  .content__bg {
+    display: flex;
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 864px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 40px;
+      padding-bottom: 0px;
+      min-height: 1px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 32px;
+    }
+
+    .advantages__icon {
+      max-width: 64px;
+      margin-bottom: 25px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 54px;
+        margin-bottom: 16px;
+        margin-left: -7px;
+      }
+    }
+
+    h2 {
+      max-width: 448px;
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
+    }
+
+    p {
+      max-width: 384px;
+      margin-top: 25px;
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 14px;
+      }
+    }
+
+    .btn {
+      margin-top: 32px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 17px;
+      }
+    }
+  }
+
+  .content__bg-green {
+    .content__bg {
+      background-color: rgba($green, 0.9);
+    }
+
+    .bg_top {
+      top: 0px;
+      left: 0;
+    }
+
+    .bg_bottom {
+      bottom: 0;
+      right: 0;
+    }
+
+    .advantages__img {
+      transform: translate(-56%, 54px);
+    }
+  }
+
+  .content__bg-blue {
+    .content__bg {
+      background-color: $blue;
+    }
+
+    .bg_top {
+      top: 0;
+      right: 0;
+    }
+
+    .bg_bottom {
+      bottom: 0;
+      left: 0;
+    }
+
+    .advantages__img {
+      max-width: 126%;
+      transform: translateX(-55%);
+    }
+  }
+
+  .content__bg-purple {
+    .content__bg {
+      background-color: $purple;
+    }
+
+    .bg_top {
+      top: 0;
+      right: 0;
+    }
+
+    .bg_bottom {
+      bottom: 0;
+      left: 0;
+    }
+
+    .advantages__img {
+      max-width: 120%;
+      transform: translate(-46%, 12px);
+    }
+  }
+}

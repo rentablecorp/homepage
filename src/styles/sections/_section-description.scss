@@ -1,0 +1,27 @@
+.description {
+  padding-top: 208px;
+  padding-bottom: 136px;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 10px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 42px;
+  }
+
+  h2 {
+    letter-spacing: -0.2px;
+  }
+
+  .text {
+    max-width: 400px;
+    transform: translate(24px, -7px);
+
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      margin-top: 12px;
+      transform: translate(0, 0);
+    }
+  }
+}

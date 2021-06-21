@@ -1,0 +1,30 @@
+@@include('base/base-start.html', {
+  "title": "Rentable - Pricing"
+})
+
+  @@include('sections/section-header.html', {
+    "navbar-green-bg": "",
+    "navbar": [
+      {
+        "href": "about.html",
+        "name": "About Us"
+      },
+      {
+        "href": "features.html",
+        "name": "Features"
+      },
+      {
+        "href": "pricing.html",
+        "name": "Pricing",
+        "activeLink": true
+      },
+      {
+        "href": "#",
+        "name": "Contacts"
+      }
+    ]
+  })
+  @@include('sections/section-hero-pricing.html')
+  @@include('sections/section-pricing.html')
+  @@include('sections/section-footer.html')
+@@include('base/base-end.html')

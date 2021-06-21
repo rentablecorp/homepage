@@ -1,0 +1,71 @@
+// ############ Typography ############
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 600;
+  color: $gray;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 58px;
+  line-height: 73px;
+  font-weight: bold;
+
+  @include media-breakpoint-down(md) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-opacity {
+  opacity: 0.8;
+}

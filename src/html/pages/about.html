@@ -1,0 +1,31 @@
+@@include('base/base-start.html', {
+  "title": "Rentable - About Us"
+})
+
+  @@include('sections/section-header.html', {
+    "navbar-green-bg": "",
+    "navbar": [
+      {
+        "href": "about.html",
+        "name": "About Us",
+        "activeLink": true
+      },
+      {
+        "href": "features.html",
+        "name": "Features"
+      },
+      {
+        "href": "pricing.html",
+        "name": "Pricing"
+      },
+      {
+        "href": "#",
+        "name": "Contacts"
+      }
+    ]
+  })
+  @@include('sections/section-hero-about.html')
+  @@include('sections/section-mission.html')
+  @@include('sections/section-statistic-about.html')
+  @@include('sections/section-footer.html')
+@@include('base/base-end.html')

@@ -1,0 +1,18 @@
+// ############ Fonts ############
+
+@mixin font-face ($name, $file-name, $font-weight, $font-style: normal) {
+  @font-face {
+      font-family: $name;
+      src: url('#{$path-fonts}#{$file-name}.ttf') format('opentype');
+      font-weight: $font-weight;
+      font-style: $font-style;
+  }
+}
+
+$TTInterfaces:             'TTInterfaces';
+@include font-face($TTInterfaces, 'FontsFree-Net-TTInterfaces-Regular', 400);
+@include font-face($TTInterfaces, 'FontsFree-Net-TTInterfaces-Medium', 500);
+@include font-face($TTInterfaces, 'FontsFree-Net-TTInterfaces-Bold', 700);
+
+
+$font-primary:       $TTInterfaces, sans-serif;

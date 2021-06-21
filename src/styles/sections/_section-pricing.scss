@@ -1,0 +1,306 @@
+.pricing {
+  background-color: rgba($green-light, 0.8);
+  padding-bottom: 30px;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 0px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .nav-tabs {
+    transform: translateY(-32px);
+    background-color: white;
+    box-shadow: 0px 4px 40px rgba($gray-600, 0.21);
+    border: 0;
+    padding: 9px;
+    border-radius: 40px;
+    width: auto;
+    display: inline-flex;
+
+    .nav-link {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      border-radius: 40px;
+      padding: 12px 32px 8px;
+      min-height: 48px;
+      min-width: 176px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      color: rgba($green, 0.6);
+
+      &.active {
+        background-color: $green;
+        color: white;
+        box-shadow: -2px 4px 6px rgba($gray-600, 0.12);
+      }
+
+      @include media-breakpoint-down(sm) {
+        min-height: 40px;
+        min-width: 112px;
+        padding: 10px 20px 6px;
+      }
+    }
+  }
+
+  .tab-content {
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+      transform: translateY(-30px);
+      margin-bottom: -30px;
+    }
+
+    .tab-pane {
+      display: block;
+      height: 1px;
+      overflow: hidden;
+
+      &.active {
+        height: auto;
+        overflow: visible;
+      }
+    }
+
+    .slider {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      @include media-breakpoint-down(lg) {
+        display: block;
+      }
+    }
+
+    .slick-list {
+      @include media-breakpoint-down(lg) {
+        overflow: visible;
+      }
+    }
+
+    .card {
+      margin-top: 56px;
+      margin-bottom: 100px;
+      position: relative;
+      background-color: white;
+      width: 100%;
+      max-width: 416px;
+      padding: 48px;
+      text-align: left;
+      border-radius: 12px;
+      box-shadow: 0px 4px 60px rgba($gray-600, 0.21);
+      transition: all .3s ease;
+
+      &:hover {
+        box-shadow: 0px 4px 60px rgba($gray-600, 0.5);
+      }
+
+      &.card-dark {
+        background-color: $gray;
+        color: white;
+        z-index: 1;
+
+        @include media-breakpoint-up(xl) {
+          margin: 38px -16px 0;
+
+          .card-head {
+            padding-bottom: 26px;
+    
+            .card-img {
+              width: 96px;
+              height: 96px;
+            }
+    
+            .card-title {
+              font-size: 24px;
+              line-height: 44px;
+              color: white;
+            }
+    
+            .card-price {
+              font-size: 40px;
+              line-height: 48px;
+            }
+          }
+
+          .card-body {
+            padding-top: 35px;
+          }  
+        }
+
+        .card-head {
+  
+          .card-title {
+            color: white;
+          }
+        }
+
+        .card-body {
+          
+          ul li::before {
+            background-image: url("../images/check-white.svg");
+          }
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin: 30px 6px 42px;
+        max-width: 304px;
+        padding: 24px;
+        box-shadow: 0px 8px 30px rgba($gray-600, 0.21);
+
+        &:hover {
+          box-shadow: 0px 8px 30px rgba($gray-600, 0.5);
+        }
+      }
+
+      .card-tag {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        height: 28px;
+        min-width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $purple-600;
+        border-radius: 40px;
+        padding: 4px 8px 2px;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 700;
+        color: white;
+
+        @include media-breakpoint-down(sm) {
+          height: 24px;
+          min-width: 72px;
+          font-size: 12px;
+        }
+      }
+
+      .card-head {
+        display: flex;
+        padding-bottom: 16px;
+        border-bottom: 2px solid rgba($gray-400, 0.3);
+
+        @include media-breakpoint-down(sm) {
+          padding-bottom: 10px;
+        }
+
+        .card-img {
+          width: 80px;
+          height: 80px;
+          margin-right: 24px;
+
+          @include media-breakpoint-down(sm) {
+            width: 64px;
+            height: 64px;
+            margin-right: 16px;
+          }
+        }
+
+        .card-title {
+          font-size: 20px;
+          line-height: 40px;
+          font-weight: 600;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 16px;
+            line-height: 32px;
+          }
+        }
+
+        .card-price {
+          font-size: 34px;
+          line-height: 40px;
+          font-weight: bold;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 28px;
+            line-height: 32px;
+          }
+
+          span {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .card-body {
+        padding-top: 26px;
+
+        @include media-breakpoint-down(sm) {
+          padding-top: 18px;
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 500;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 16px;
+          }
+        }
+
+        ul {
+          li {
+            margin-top: 24px;
+            display: flex;
+
+            &::before {
+              content: '';
+              display: inline-flex;
+              width: 24px;
+              height: 24px;
+              margin-right: 16px;
+              background-image: url("../images/check.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            &.disabled {
+              color: $gray-400;
+
+              &::before {
+                background-image: url("../images/check-disabled.svg");
+              }
+            }
+
+            .text-through {
+              text-decoration: line-through;
+            }
+
+            @include media-breakpoint-down(sm) {
+              margin-top: 16px;
+              font-size: 16px;
+            }
+          }
+        }
+
+      }
+
+      .btn {
+        margin-top: 30px;
+        width: 100%;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+.testimonials {
+  padding-top: 75px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 10px;
+  }
+
+  .slider__wrapper {
+    margin-top: 66px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 22px;
+    }
+  }
+
+  .slider__wrapper-nav,
+  .slider__wrapper-for {
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+  }
+
+  .slider__wrapper-nav {
+    position: absolute;
+    left: -208px;
+    bottom: 0;
+    direction: rtl;
+  }
+
+  .slider-nav {
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    img {
+      margin: 0 12px;
+      width: 140px;
+      height: 169px;
+    }
+  }
+
+  .slider__wrapper-for {
+    @include media-breakpoint-down(md) {
+      max-width: calc(100% - 360px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
+  }
+
+  .slider-for {
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -360px;
+      max-width: 360px;
+      height: 100%;
+      width: 100%;
+      background-color: $white;
+    }
+    
+    .slick-list {
+      overflow: visible;
+    }
+
+    .slick-slide {
+      padding: 108px 112px 110px 64px;
+      min-height: 472px;
+      background-color: rgba($green-light, 0.4);
+
+      @include media-breakpoint-down(lg) {
+        padding-right: $px-lg;
+        padding-bottom: 120px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 32px;
+        padding-left: $px-sm;
+        padding-right: $px-sm;
+        padding-bottom: 75px;
+        min-height: 340px; 
+      }
+
+      .img__wrapper {
+        position: absolute;
+        top: 0;
+        left: -360px;
+        max-width: 360px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($green-light, 0.4);
+
+        @include media-breakpoint-down(sm) {
+          position: relative;
+          top: auto;
+          left: auto;
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: inline-flex;
+        }
+
+        img {
+          display: block;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .info__wrapper {
+        @include media-breakpoint-down(sm) {
+          display: inline-block;
+          margin-left: 11px;
+          transform: translateY(-6px);
+        }
+      }
+
+      .status {
+        margin-top: 6px;
+        color: rgba($gray, 0.6);
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 0px;
+        }
+      }
+
+      .text {
+        margin-top: 26px;
+        font-size: 24px;
+        line-height: 32px;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 12px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .slider-arrows {
+    position: absolute;
+    bottom: 78px;
+    width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      bottom: 48px;
+    }
+
+    .slider-arrow {
+      position: absolute;
+      display: flex;
+      transform: translateY(-50%);
+      z-index: 10;
+      cursor: pointer;
+
+      &.slick-hidden {
+        display: none;
+      }
+
+      &.slick-disabled {
+        svg path {
+          stroke: $gray-400;
+        }
+      }
+
+      &.prev {
+        left: 68px;
+
+        @include media-breakpoint-down(sm) {
+          left: 24px;
+        }
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      &.next {
+        left: 132px;
+
+        @include media-breakpoint-down(sm) {
+          left: 88px;
+        }
+      }
+
+      svg {
+        height: 32px;
+      }
+    }
+  }
+
+  .slider-pagination {
+    position: absolute;
+    top: -2px;
+    left: $px-xl;
+    z-index: 1;
+    font-weight: 500;
+
+    @include media-breakpoint-down(lg) {
+      left: 50%;
+      transform: translateX(-486px);
+    }
+
+    @include media-breakpoint-down(md) {
+      top: auto;
+      bottom: 64px;
+      left: auto;
+      transform: translateX(0);
+      right: $px-lg;
+    }
+
+    @include media-breakpoint-down(sm) {
+      bottom: 35px;
+      right: $px-sm;
+    }
+
+    .current-slide {
+      color: $green;
+    }
+
+    .dash {
+      margin: 0 18px;
+      display: inline-block;
+      background-color: $gray;
+      width: 29px;
+      height: 1px;
+      transform: translateY(-6px);
+
+      @include media-breakpoint-down(sm) {
+        margin: 0 11px;
+        width: 24px;
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
