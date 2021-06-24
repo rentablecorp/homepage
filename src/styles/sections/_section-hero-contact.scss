@@ -1,3 +1,13 @@
 .contact_form {
-	background-color: purple;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+	margin-top: 0.5rem;
+}
+
+#request-email {
+	margin-top: 0.5rem;
+	width: 20rem;
 }
