@@ -1,38 +1,41 @@
 // Base
-@import 'base/paths';
-@import 'base/fonts';
-@import 'base/colors';
-@import 'base/bootstrap';
-@import '../../node_modules/reset-css/sass/reset';
-@import 'base/default';
+@import "base/paths";
+@import "base/fonts";
+@import "base/colors";
+@import "base/bootstrap";
+@import "../../node_modules/reset-css/sass/reset";
+@import "base/default";
 
 // Base elements
-@import 'base/buttons';
-@import 'base/typography';
+@import "base/buttons";
+@import "base/typography";
 
 // Modules
-@import 'modules/slick.scss';
-@import 'modules/slick-theme.scss';
+@import "modules/slick.scss";
+@import "modules/slick-theme.scss";
 
 // Sections
-@import 'sections/section-header';
-@import 'sections/section-footer';
+@import "sections/section-header";
+@import "sections/section-footer";
 
 // Home page
-@import 'sections/section-hero';
-@import 'sections/section-description';
-@import 'sections/section-advantages';
-@import 'sections/section-deposits';
-@import 'sections/section-statistic';
-@import 'sections/section-testimonials';
+@import "sections/section-hero";
+@import "sections/section-description";
+@import "sections/section-advantages";
+@import "sections/section-deposits";
+@import "sections/section-statistic";
+@import "sections/section-testimonials";
 
 // About page
-@import 'sections/section-hero-secondary';
-@import 'sections/section-mission';
+@import "sections/section-hero-secondary";
+@import "sections/section-mission";
 
 // Pricing page
-@import 'sections/section-pricing';
+@import "sections/section-pricing";
 
 // Features page
-@import 'sections/section-services';
-@import 'sections/section-features';
+@import "sections/section-services";
+@import "sections/section-features";
+
+// Contact page
+@import "sections/section-hero-contact";
