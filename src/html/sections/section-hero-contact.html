@@ -4,23 +4,36 @@
 		alt="figure"
 		class="bg_figure d-none d-md-block"
 	/>
-	<div class="contact_form">
+	<div class="content">
 		<span class="text-green"> Contact </span>
-		<h2>Schedule a demo today</h2>
-		<form action="https://formspree.io/f/mgerzeeb" method="POST">
-			<label>
-				Your email:
-				<input type="email" name="_replyto" />
-			</label>
-			<label>
-				FORM DATA
-				<textarea name="message"></textarea>
-			</label>
+		<div>
+			<h2>Schedule a demo today</h2>
+			<form
+				action="https://formspree.io/f/mgerzeeb"
+				method="POST"
+				class="contact_form"
+			>
+				<label for="request-email" class="form-label">Email address</label>
+				<input
+					type="email"
+					class="form-control"
+					id="request-email"
+					name="request-email"
+					placeholder="name@example.com"
+				/>
+				<label for="request-text" class="form-label">Leave a message:</label>
+				<textarea
+					class="form-control"
+					id="request-text"
+					name="request-text"
+					rows="3"
+				></textarea>
+				<label for="request-date" class="form-label">Pick a date:</label>
+				<input type="date" id="request-date" name="request-date" />
 
-			<!-- your other form fields go here -->
-
-			<button type="submit">Send</button>
-		</form>
+				<button type="submit" class="btn btn-green">Send</button>
+			</form>
+		</div>
 	</div>
 	<div class="d-none d-lg-flex w-100">
 		<img
