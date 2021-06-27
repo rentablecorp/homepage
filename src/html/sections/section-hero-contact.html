@@ -1,47 +1,70 @@
 <section class="hero-secondary hero-features">
-	<img
-		src="assets/images/figure-hero-secondary.svg"
-		alt="figure"
-		class="bg_figure d-none d-md-block"
-	/>
-	<div class="content">
-		<span class="text-green"> Contact </span>
-		<div>
-			<h2>Schedule a demo today</h2>
-			<form
-				action="https://formspree.io/f/mgerzeeb"
-				method="POST"
-				class="contact_form"
-			>
-				<label for="request-email" class="form-label">Email address</label>
-				<input
-					type="email"
-					class="form-control"
-					id="request-email"
-					name="request-email"
-					placeholder="name@example.com"
-					required
-				/>
-				<label for="request-text" class="form-label">Leave a message:</label>
-				<textarea
-					class="form-control"
-					id="request-text"
-					name="request-text"
-					rows="3"
-					required
-				></textarea>
-				<label for="request-date" class="form-label">Pick a date:</label>
-				<input type="date" id="request-date" name="request-date" required/>
-
-				<button type="submit" class="btn btn-green">Send</button>
-			</form>
+  <img
+    src="assets/images/figure-hero-secondary.svg"
+    alt="figure"
+    class="bg_figure d-none d-md-block"
+  />
+  <div class="content">
+    <span class="text-green"> Contact </span>
+    <div>
+      <h2>Schedule a demo today</h2>
+      <form
+        action="https://formspree.io/f/mgerzeeb"
+        method="POST"
+        class="contact_form"
+      >
+        <label for="request-name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="request-name"
+          name="request-name"
+          placeholder="Jane Smith"
+          required
+        />
+        <label for="request-email" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="request-email"
+          name="request-email"
+          placeholder="name@example.com"
+          required
+        />
+		<div class="form-label">
+			<label for="request-type" class="request-type">Landlord</label><input type="checkbox" name="request-type"/> 
+			or 
+			<label for="request-type" class="request-type">Tenant</label><input type="checkbox" name="request-type"/> 
 		</div>
-	</div>
-	<div class="d-none d-lg-flex w-100">
-		<img
-			src="assets/images/hero-features-img.png"
-			alt="Our features"
-			class="hero_img"
-		/>
-	</div>
+		<label for="request-number" class="form-label">Phone Number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="request-number"
+          name="request-number"
+          placeholder="222-333-444"
+          required
+        />
+        <!-- <label for="request-text" class="form-label">Leave a message:</label>
+        <textarea
+          class="form-control"
+          id="request-text"
+          name="request-text"
+          rows="3"
+          required
+        ></textarea> -->
+        <label for="request-date" class="form-label">Pick a date:</label>
+        <input type="date" id="request-date" name="request-date" required />
+
+        <button type="submit" class="btn btn-green">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="d-none d-lg-flex w-100">
+    <img
+      src="assets/images/hero-features-img.png"
+      alt="Our features"
+      class="hero_img"
+    />
+  </div>
 </section>
