@@ -184,12 +184,13 @@
   &__logo {
     
     img {
-      max-width: 100px;
-      width: 100%; 
-      height: auto;
+      max-width: 150px;
+      width: 150px; 
+      height: 35px;
+      max-height: 35px;
 
       @include media-breakpoint-down(sm) {
-        max-width: 92px;
+        max-width: 150px;
       }
     }
   }
