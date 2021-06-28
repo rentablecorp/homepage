@@ -109,9 +109,11 @@
             required
           />
           <div class="form-label">
-            <label for="request-type" class="request-type">Landlord</label><input type="checkbox" name="request-type" value="landlord"/> 
-            or 
-            <label for="request-type" class="request-type">Tenant</label><input type="checkbox" name="request-type" value="tenant"/> 
+            <label for="request-type" class="request-type">Landlord</label
+            ><input type="checkbox" name="request-type" value="landlord" />
+            or
+            <label for="request-type" class="request-type">Tenant</label
+            ><input type="checkbox" name="request-type" value="tenant" />
           </div>
           <label for="request-number" class="form-label">Phone Number</label>
           <input
@@ -122,8 +124,16 @@
             placeholder="222-333-4444"
             required
           />
-          <label for="request-date" class="form-label">Pick a Date:</label>
-          <input type="date" id="request-date" class="form-date" name="request-date" placeholder="yyyy-mm-dd" required/>
+          <label for="request-date" class="form-label"
+            >Pick a Date:<input
+              type="date"
+              id="request-date"
+              class="form-date"
+              name="request-date"
+              placeholder="yyyy-mm-dd"
+              required
+              style="width: 100%;"
+          /></label>
 
           <button type="submit" class="btn btn-green">Send</button>
         </form>
