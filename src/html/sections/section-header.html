@@ -1,40 +1,47 @@
 <header class="header">
-	<nav class="navbar navbar-expand-lg">
-		<a class="header__logo d-lg-none" href="/index.html">
-			<img src="assets/images/logo_whole.png" alt="Rentable logo" />
-		</a>
-		<button
-			class="navbar-toggler collapsed"
-			type="button"
-			data-toggle="collapse"
-			data-target="#navbarNav"
-			aria-controls="navbarNav"
-			aria-expanded="false"
-			aria-label="Toggle navigation"
-		>
-			<img src="assets/images/menu.svg" alt="Rentable Menu" />
-		</button>
-		<div class="collapse navbar-collapse @@navbar-green-bg" id="navbarNav">
-			<div class="header__col d-none d-lg-flex">
-				<a class="header__logo" href="/">
-					<img src="assets/images/logo_whole.png" alt="Rentable logo" />
-				</a>
-			</div>
-			<ul class="navbar-nav">
-				@@for (let link of navbar) {
-				<li class="nav-item ` + (link.activeLink ? 'active' : '') + `">
-					<a class="nav-link" href="` + link.href + `"> ` + link.name + ` </a>
-				</li>
-				}
-				<li class="nav-item d-lg-none btn-wrapper">
-					<!-- <a class="btn btn-transparent" href="#"> Sign in </a> -->
-					<a class="btn btn-green" href="/contact.html"> Request a Demo </a>
-				</li>
-			</ul>
-			<div class="header__col d-none d-lg-flex">
-				<!-- <a class="nav-link" href="#"> Sign in </a> -->
-				<a class="btn btn-green" href="/contact.html"> Request a Demo </a>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar navbar-expand-lg">
+        <a class="header__logo d-lg-none" href="https://www.rentable.com">
+            <img src="assets/images/logo_whole.png" alt="Rentable logo" />
+        </a>
+        <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <img src="assets/images/menu.svg" alt="Rentable Menu" />
+        </button>
+        <div class="collapse navbar-collapse @@navbar-green-bg" id="navbarNav">
+            <div class="header__col d-none d-lg-flex">
+                <a class="header__logo" href="/">
+                    <img
+                        src="assets/images/logo_whole.png"
+                        alt="Rentable logo"
+                    />
+                </a>
+            </div>
+            <ul class="navbar-nav">
+                @@for (let link of navbar) {
+                <li class="nav-item ` + (link.activeLink ? 'active' : '') + `">
+                    <a class="nav-link" href="` + link.href + `">
+                        ` + link.name + `
+                    </a>
+                </li>
+                }
+                <li class="nav-item d-lg-none btn-wrapper">
+                    <!-- <a class="btn btn-transparent" href="#"> Sign in </a> -->
+                    <a class="btn btn-green" href="/contact">
+                        Request a Demo
+                    </a>
+                </li>
+            </ul>
+            <div class="header__col d-none d-lg-flex">
+                <!-- <a class="nav-link" href="#"> Sign in </a> -->
+                <a class="btn btn-green" href="/contact"> Request a Demo </a>
+            </div>
+        </div>
+    </nav>
 </header>
