@@ -88,12 +88,8 @@
             transform: translateY(-2px);
         }
 
-        @include media-breakpoint-down(md) {
-            margin-top: 40px;
-        }
-
         @include media-breakpoint-down(sm) {
-            margin-top: 30px;
+            margin-top: 15px;
         }
     }
 
