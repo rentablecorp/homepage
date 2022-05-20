@@ -77,9 +77,10 @@ gulp.task(
           "/contact": "./contact.html",
           "/thank-you": "./thank-you.html",
           "/privacy-policy": "./privacy-policy.html",
-          "/tos-landlord": "./terms-of-service-landlord.html",
-          "/tos-tenant": "./terms-of-service-tenant.html",
-          "/tos-payment-plan": "./terms-of-service-payment-plan.html",
+          "/terms-of-service-landlord": "./terms-of-service-landlord.html",
+          "/terms-of-service-tenant": "./terms-of-service-tenant.html",
+          "/terms-of-service-payment-plan":
+            "./terms-of-service-payment-plan.html",
         },
       },
     });
